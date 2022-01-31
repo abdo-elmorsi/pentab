@@ -1,0 +1,258 @@
+:root {
+    --main-color--: #b6e54d;
+    --font-black--: #000000;
+    --font-gray--: #838383;
+    --font-size--: 18px;
+    --font-head--: 40px;
+}
+body {
+    font-family: "Cairo", sans-serif;
+    font-family: "Open Sans", sans-serif;
+    /* overflow-x: hidden; */
+    min-height: 2000px;
+}
+* {
+    scroll-behavior: smooth;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*::selection {
+    background-color: var(--main-color--);
+    color: #fff;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--main-color--);
+}
+
+/* start statistic */
+.heading {
+    font-weight: 900;
+    font-size: 45px;
+}
+.lead {
+    font-size: var(--font-size--);
+    color: var(--font-gray--);
+    line-height: 1.9
+}
+.btn {
+    margin: 0 auto;
+    display: block;
+    border-radius: 15px;
+    width: 250px;
+    height: 55px;
+    font-size: 17px;
+    color: var(--font-black--);
+    font-weight: 600;
+    background-color: var(--main-color--);
+    border: 1px solid var(--main-color--);
+    line-height: 2;
+}
+.btn:hover {
+    color: white;
+}
+/* end statistic */
+
+/* ######################################################################## */
+
+/* start navbar */
+.navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: white;
+}
+.navbar .navbar-brand {
+    color: var(--main-color--);
+    font-size: calc(var(--font-size--) + 10px);
+}
+.navbar .navbar-brand:hover {
+    color: var(--main-color--);
+}
+.navbar .navbar-brand span {
+    color: var(--font-black--);
+}
+.navbar .navbar-nav li a {
+    transition: color 0.4s ease-in-out;
+    text-align: center;
+    font-size: var(--font-size--);
+    font-weight: 600;
+    cursor: pointer;
+}
+.navbar .navbar-nav li a:hover {
+    color: var(--main-color--) !important;
+}
+/* end navbar */
+
+/* ################################################################ */
+
+/* ###############################################################################################  start header  */
+.header {
+    background: url("https://st4.depositphotos.com/15832594/28786/i/1600/depositphotos_287865780-stock-photo-ecology-concept-woman-hand-holding.jpg")
+        no-repeat fixed center;
+    background-size: cover;
+    color: #fff;
+}
+.overlay {
+    min-height: calc(100vh - 68px);
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.header .content {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.header .content h2 {
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+/* ###############################################################################################  end header  */
+/* start who-we-are */
+
+.who-we-are p:last-of-type {
+    color: var(--font-black--);
+}
+/* end who-we-are */
+
+/* ########################################################################### */
+
+/* start products */
+
+.products .container > h2 {
+    text-align: center;
+}
+.products .container > p {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.products .card {
+    transform: scale(0.9);
+    transition: all 0.4s ease-in-out;
+}
+.products .card:hover {
+    transform: scale(1);
+    box-shadow: 0 0.125rem 1.5rem rgba(0, 0, 0, 0.075) !important;
+}
+.products .card svg path {
+    transition: color 0.4s ease-in-out;
+}
+.products .card svg:hover path {
+    color: var(--main-color--);
+}
+/* end products */
+
+/* ############################################################# */
+
+/* start testimonials */
+
+/* end testimonials */
+
+/* start pricing table */
+
+/* end pricing table */
+
+/* ######################################################## */
+
+/* star footer */
+
+/* end footer */
+
+/* #################################################################        loading page */
+
+/* #################################################################        loading page */
+
+/* start loading page */
+/* 
+body {
+    overflow-y: hidden;
+}
+
+.overlay-loading {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    background: #111;
+}
+
+.overlay-loading .loading {
+    width: 100px;
+    height: 50px;
+    margin: 50vh auto;
+    position: relative;
+}
+
+.overlay-loading .loading span {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: 10px;
+    width: 15px;
+    -webkit-animation: waving 1.5s infinite ease-in-out;
+    animation: waving 1.5s infinite ease-in-out;
+}
+
+.overlay-loading .loading span:nth-of-type(2) {
+    left: 18px;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.overlay-loading .loading span:nth-of-type(3) {
+    left: 36px;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+.overlay-loading .loading span:nth-of-type(4) {
+    left: 53px;
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+.overlay-loading .loading span:last-of-type {
+    left: 70px;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+
+@keyframes waving {
+    0%,
+    50%,
+    100% {
+        height: 5px;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        background-color: var(--colorOne--);
+    }
+    25% {
+        height: 50px;
+        -webkit-transform: translateY(15px);
+        transform: translateY(15px);
+        background-color: var(--colorTow--);
+    }
+} */
+
+/* end loading page */
