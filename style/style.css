@@ -44,7 +44,7 @@ body {
 .lead {
     font-size: var(--font-size--);
     color: var(--font-gray--);
-    line-height: 1.9
+    line-height: 1.9;
 }
 .btn {
     margin: 0 auto;
@@ -163,9 +163,155 @@ body {
 
 /* ############################################################# */
 
-/* start testimonials */
+/* start services */
+.background {
+    position: relative;
+    background-color: #f3f3f3a4;
+    border-radius: 50%;
+    padding: 400px;
+    margin-bottom: 100px;
+}
+.services .background .heading,
+.services .background .professional_one,
+.services .background .professional_two,
+.services .background .data_related,
+.services .background .geo_database,
+.services .background .application {
+    position: absolute;
+    padding: 40px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 2;
+}
+.services .background .professional_one::after,
+.services .background .professional_two::after,
+.services .background .data_related::after,
+.services .background .geo_database::after,
+.services .background .application::after {
+    position: absolute;
+    left: 50%;
+    bottom: -40%;
+    width: 120%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
 
-/* end testimonials */
+.services .background .heading {
+    top: 6%;
+    padding: 0;
+    background-color: transparent;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.services .background .professional_one {
+    top: 18%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+}
+.services .background .professional_one::after {
+    content: "PROFESSIONAL SUPPORT";
+}
+.services .background .professional_two {
+    bottom: 18%;
+    left: 18%;
+    transform: translate(-50%, 50%);
+}
+.services .background .professional_two::after {
+    content: "PROFESSIONAL SUPPORT";
+}
+.services .background .data_related {
+    z-index: 1;
+    border: 20px solid rgb(231, 231, 231);
+    outline: 40px solid rgb(240, 240, 240);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.services .background .data_related::after {
+    content: "DATA RELATED ACTIVITES";
+}
+.services .background .geo_database {
+    top: 18%;
+    right: 18%;
+    transform: translate(50%, -50%);
+}
+.services .background .geo_database::after {
+    content: "GEO-DATABASE MODELING & DESIGN";
+}
+.services .background .application {
+    bottom: 18%;
+    right: 18%;
+    transform: translate(50%, 50%);
+}
+.services .background .application::after {
+    content: "APPLICTION DEVELOPMENT";
+}
+.services svg path {
+    color: var(--main-color--);
+}
+.services .teble {
+    background-color: #838383;
+}
+.services .teble .col-6:not(:last-of-type) {
+    border-right: 2px solid rgb(201, 201, 201);
+}
+@media screen and (max-width: 900px) {
+    .background {
+        padding: 250px;
+    }
+    .background .heading {
+        font-size: 25px;
+    }
+    .services .background .heading,
+    .services .background .professional_one,
+    .services .background .professional_two,
+    .services .background .data_related,
+    .services .background .geo_database,
+    .services .background .application {
+        padding: 35px;
+    }
+    .services .background .professional_one::after,
+    .services .background .professional_two::after,
+    .services .background .data_related::after,
+    .services .background .geo_database::after,
+    .services .background .application::after {
+        font-size: 0.8rem;
+    }
+    .services .background div svg {
+        width: 80px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .background {
+        padding: 150px;
+    }
+    .background .heading {
+        font-size: 18px;
+    }
+    .services .background .heading,
+    .services .background .professional_one,
+    .services .background .professional_two,
+    .services .background .data_related,
+    .services .background .geo_database,
+    .services .background .application {
+        padding: 30px;
+    }
+    .services .background .professional_one::after,
+    .services .background .professional_two::after,
+    .services .background .data_related::after,
+    .services .background .geo_database::after,
+    .services .background .application::after {
+        font-size: 0.7rem;
+    }
+    .services .background div svg {
+        width: 45px;
+    }
+}
+
+/* end services */
+/* ############################################################# */
 
 /* start pricing table */
 
@@ -182,7 +328,7 @@ body {
 /* #################################################################        loading page */
 
 /* start loading page */
-/* 
+
 body {
     overflow-y: hidden;
 }
@@ -239,20 +385,18 @@ body {
 }
 
 @keyframes waving {
-    0%,
-    50%,
-    100% {
+    0%, 50%, 100% {
         height: 5px;
         -webkit-transform: translateY(0);
         transform: translateY(0);
-        background-color: var(--colorOne--);
+        background-color: var(--main-color--);
     }
     25% {
         height: 50px;
         -webkit-transform: translateY(15px);
         transform: translateY(15px);
-        background-color: var(--colorTow--);
+        background-color: var(--font-gray--);
     }
-} */
+}
 
 /* end loading page */
