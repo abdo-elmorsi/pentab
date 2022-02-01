@@ -296,7 +296,7 @@ body {
     .services .background .data_related,
     .services .background .geo_database,
     .services .background .application {
-        padding: 30px;
+        padding: 28px;
     }
     .services .background .professional_one::after,
     .services .background .professional_two::after,
@@ -306,7 +306,7 @@ body {
         font-size: 0.7rem;
     }
     .services .background div svg {
-        width: 45px;
+        width: 40px;
     }
 }
 
