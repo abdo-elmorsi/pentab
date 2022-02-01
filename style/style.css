@@ -303,7 +303,7 @@ body {
     .services .background .data_related::after,
     .services .background .geo_database::after,
     .services .background .application::after {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
     .services .background div svg {
         width: 40px;
