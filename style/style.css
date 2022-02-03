@@ -134,6 +134,11 @@ body {
     position: absolute;
     bottom: -30px;
 }
+@media (max-width: 600px) {
+    .wrapper .text {
+        width: 95%;
+    }
+}
 
 /* ###############################################################################################  end header  */
 /* start who-we-are */
