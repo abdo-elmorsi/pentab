@@ -8,14 +8,15 @@
     --font-size--: 18px;
     --font-head--: 40px;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: "Cairo", sans-serif;
     font-family: "Open Sans", sans-serif;
     overflow-x: hidden !important;
-    min-height: 2000px;
 }
 * {
-    scroll-behavior: smooth;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0;
@@ -46,13 +47,13 @@ body {
 /* start statistic */
 .heading {
     font-weight: 900;
-    font-size: 45px;
+    font-size: 2.8rem;
 }
 .lead {
     font-size: var(--font-size--);
     color: var(--font-gray--);
     line-height: 1.9;
-    font-weight: 600;
+    font-weight: 500;
 }
 .btn {
     margin: 0 auto;
