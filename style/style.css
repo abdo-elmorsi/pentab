@@ -182,8 +182,8 @@ body {
 .background {
     position: relative;
     background-color: rgba(245, 245, 245, 0.493);
-    border-radius: 50%;
-    padding: 400px;
+    border-radius: 55%;
+    padding: 380px;
     margin-bottom: 100px;
     color: var(--font-gray--);
 }
@@ -194,7 +194,7 @@ body {
 .services .background .geo_database,
 .services .background .application {
     position: absolute;
-    padding: 40px;
+    padding: 35px;
     border-radius: 50%;
     background-color: var(--bg-color--);
     z-index: 2;
@@ -207,7 +207,7 @@ body {
     position: absolute;
     left: 50%;
     bottom: -40%;
-    width: 120%;
+    width: 118%;
     transform: translate(-50%, -50%);
     font-size: 1rem;
     font-weight: 600;
@@ -264,6 +264,10 @@ body {
     border-right: 2px solid rgb(201, 201, 201);
 }
 @media screen and (max-width: 900px) {
+    .services .teble .col-6:nth-child(2),
+    .services .teble .col-6:nth-child(4) {
+        border-right: 0;
+    }
     .background {
         padding: 250px;
     }
@@ -302,15 +306,18 @@ body {
     .services .background .data_related,
     .services .background .geo_database,
     .services .background .application {
-        padding: 20px;
+        padding: 38px;
+    }
+    .services .background .data_related {
+        outline: 20px solid rgb(240, 240, 240);
     }
     .services .background .professional_one,
     .services .background .professional_two {
-        left: 20%;
+        left: 22%;
     }
     .services .background .geo_database,
     .services .background .application {
-        right: 20%;
+        right: 22%;
     }
     .services .background .professional_one p,
     .services .background .professional_two p,
