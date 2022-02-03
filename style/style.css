@@ -13,7 +13,7 @@
 body {
     font-family: "Cairo", sans-serif;
     font-family: "Open Sans", sans-serif;
-    /* overflow-x: hidden; */
+    overflow-x: hidden !important;
     min-height: 2000px;
 }
 * {
@@ -289,7 +289,7 @@ body {
         width: 50px;
     }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
     .background {
         padding: 180px;
     }
@@ -324,7 +324,7 @@ body {
         width: 202px !important;
     }
     .services .background .application p {
-        width: 150px !important;
+        width: 154px !important;
     }
     .services .background div svg {
         width: 40px;
