@@ -109,33 +109,31 @@ body {
 }
 /* end navbar */
 
-/* ################################################################ */
-
 /* ###############################################################################################  start header  */
-.header {
-    background: url("https://st4.depositphotos.com/15832594/28786/i/1600/depositphotos_287865780-stock-photo-ecology-concept-woman-hand-holding.jpg")
-        no-repeat fixed center;
-    background-size: cover;
-    color: #fff;
-}
-.overlay {
-    min-height: calc(100vh - 68px);
-    height: 100%;
-    background: rgba(0, 0, 0, 0.2);
-    position: relative;
-}
 
-.header .content {
-    width: 90%;
+.wrapper {
+    height: 100vh;
+    background-image: url("https://images.pexels.com/photos/1168742/pexels-photo-1168742.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    position: relative;
+    background-size: cover;
+    background-position: 50% 0;
+}
+.wrapper .text {
+    width: 70%;
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 15%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
 }
-.header .content h2 {
-    margin: 0;
+.wrapper h1 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
     margin-bottom: 30px;
-    color: var(--font-white--);
+}
+.wrapper svg {
+    position: absolute;
+    bottom: 0;
 }
 
 /* ###############################################################################################  end header  */
@@ -357,7 +355,7 @@ body {
     color: var(--font-white--);
     font-size: 22px;
 }
-.why-we-are-different .join-us button {
+.why-we-are-different .join-us a.btn {
     background-color: var(--bg-color-dark--);
     outline: white;
     color: var(--font-black--);
@@ -468,9 +466,9 @@ footer {
 
 /* start loading page */
 
-body {
+/* body {
     overflow-y: hidden;
-}
+} */
 
 .overlay-loading {
     width: 100%;
