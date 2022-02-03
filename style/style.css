@@ -121,8 +121,8 @@ body {
     width: 70%;
     position: absolute;
     top: 50%;
-    left: 15%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     color: #fff;
 }
